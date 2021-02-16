@@ -4,6 +4,8 @@ import './Main.scss';
 import Home from './../home/Home'
 import Hot from './../hot/Hot'
 import Sports from './../sports/Sports'
+import NewsEdit from './../newsEdit/NewsEdit'
+
 export default function Main() {
   return (
     <Router>
@@ -91,6 +93,7 @@ export default function Main() {
                 <Route path="/sports">
                   <Sports />
                 </Route>
+                <Route path="/NewsEdit/:id" component={NewsEdit} />
               </Switch>
             </div>
           </div>
