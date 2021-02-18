@@ -1,6 +1,5 @@
-import logo from "./../../assets/logo.svg";
 import "./App.scss";
-import Main from "./../routes/Main";
+import Main from "./routing/Main";
 import ReactNotifications from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import "animate.css";

@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link,NavLink } from "react-router-dom";
 import './Main.scss';
-import Home from './../home/Home'
-import Hot from './../hot/Hot'
-import Sports from './../sports/Sports'
-import NewsEdit from './../newsEdit/NewsEdit'
+import Home from './../modules/blog/components/home/Home'
+import Hot from './../modules/blog/components/hot/Hot'
+import Sports from './../modules/blog/components/sports/Sports'
 
 export default function Main() {
   return (
@@ -93,7 +92,6 @@ export default function Main() {
                 <Route path="/sports">
                   <Sports />
                 </Route>
-                <Route path="/NewsEdit/:id" component={NewsEdit} />
               </Switch>
             </div>
           </div>
